@@ -81,9 +81,9 @@ const HorizontalTextWavy = () => {
   return (
     <section
       ref={targetRef}
-      className="relative h-[600svh] bgneutral-900 text-black"
+      className="relative h-[600svh] bgneutral-900 text-orange-700"
     >
-      <div className="sticky top-0 h-svh overflow-hidden flex items-center">
+      <div className="sticky top-0 h-screen overflow-hidden flex items-center">
         <motion.h2
           ref={textRef}
           style={{ x }}
