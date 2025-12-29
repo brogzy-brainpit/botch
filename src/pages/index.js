@@ -16,8 +16,8 @@ import { Slider } from '@/components/Slider';
 // import FlipCardOnScroll from '@/components/FlipCardOnScroll';
 // import Mask from '@/components/Mask';
 // import SpreadCards from '@/components/SpreadCards';
-import VideoOnScroll from '@/effects/VideoOnScroll';
-// import ClipedVideo from '@/components/ClipedVideo';
+// import VideoOnScroll from '@/effects/VideoOnScroll';
+import ClipedVideo from '@/components/ClipedVideo';
 // import BlockXRevealText from '@/components/blockXrevealText';
 // import GridColumn from '@/layout/GridColumn';
 // import Section from '@/layout/Section';
@@ -197,8 +197,8 @@ function PageContent() {
         </Section> */}
      {/* <Section2 preLoaderOut={preLoaderOut}/> */}
       {/* <Landing setPreLoaderOut={setPreLoaderOut} preLoaderOut={preLoaderOut}/> */}
-     {/* <ClipedVideo/> */}
-      <VideoOnScroll/>
+     <ClipedVideo/>
+      {/* <VideoOnScroll/> */}
 {/* {!preLoaderOut && <div className='h-[1000svh]'/>}
 <div className='h-screen relative text-black flex gap-4 flex-col text-[1.3em] font-body items-center justify-center'>
   <h2>code by memet_oumar </h2>

@@ -30,10 +30,9 @@ const HorizontalTextWavy = () => {
 
     const update = () => {
       const textWidth = textRef.current.scrollWidth;
-      // const offset= isTabletOrMobile?(textWidth - dimension.width) *1.1:(textWidth - dimension.width) /2
-      const offset= isTabletOrMobile?-(textWidth - dimension.width) *.8:-(textWidth - dimension.width) /2
+      // const offset= isTabletOrMobile?-(textWidth - dimension.width) *.8:-(textWidth - dimension.width) /2
+      const offset= -(textWidth - dimension.width) *.8
       finalX.set(offset);
-      // finalX.set(-(textWidth - dimension.width) *1.1);
     };
 
     update();
@@ -90,7 +89,8 @@ const HorizontalTextWavy = () => {
           className="whitespace-nowrap font-bold font-custom text-heading1 lg:text-[10em] leading-[0.95] tracking-[-0.03em]"
         >
           {letters.map((l, i) => {
-            const endBefore=isTabletOrMobile?.8:.85
+            // const endBefore=isTabletOrMobile?.8:.85
+            const endBefore=.85
              const total= letters.length
             const start = 0.1+(i / total) * endBefore;
             const end=start+ endBefore / total
