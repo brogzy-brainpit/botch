@@ -15,7 +15,7 @@ import { Slider } from '@/components/Slider';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
 // import FlipCardOnScroll from '@/components/FlipCardOnScroll';
 // import Mask from '@/components/Mask';
-// import SpreadCards from '@/components/SpreadCards';
+import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
 // import ClipedVideo from '@/components/ClipedVideo';
 // import BlockXRevealText from '@/components/blockXrevealText';
@@ -23,7 +23,7 @@ import { Slider } from '@/components/Slider';
 // import Section from '@/layout/Section';
 import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
 import Try from '@/components/Try';
-// import IconMorph from '@/components/IconMorph';
+import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
 import ScrambleText from '@/components/ScrambleText';
 // import DisplacedParagraph from '@/components/DisplacedParagraph';
@@ -105,25 +105,25 @@ function PageContent() {
     {/* <SwipeableCards/> */}
      {/* <HorizontalScrollPanel/> */}
 
-     {/* <SpreadCards/> */}
+       <Try/>
+     <SpreadCards/>
+    <HorizontalTextWavy/>
+         <IconMorph/>
+       {/* <StaticBlockXRevealText center className='gap-4'/> */}
 
      {/* <FlipCardOnScroll/> */}
 
         {/* <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/> */}
-       <Try/>
-       <StaticBlockXRevealText center className='gap-4'/>
-<HorizontalTextWavy/>
       
        {/* <TextLanding preLoaderOut={true}/> */}
         <ScrambleText scrambleSpeed={30}
-         letters='▚ ▜ ▞ ▃ ▄ ▛ ▟ ▘▅ ▖▙ ▄ ▞ ▚ ▆ ▜ ▘▖ ▔▂' 
-        letter='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
+         letter='▚ ▜ ▞ ▃ ▄ ▛ ▟ ▘▅ ▖▙ ▄ ▞ ▚ ▆ ▜ ▘▖ ▔▂' 
+        letters='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
        lette="♚ ♛ ♜ ∱ ∬ ∯ ♝ ♞ ♟ ♠ ♡ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩ ☯ ☠ ☢ ☣"
          lett='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
         className={'text-neutral-800 tracking-tighter text-left uppercase text-heading2 md:leading-[78px] lg:leading-[118px] font-custom'}/>          
         
 
-         {/* <IconMorph/> */}
 
 
           {/* <Mask/> */}
