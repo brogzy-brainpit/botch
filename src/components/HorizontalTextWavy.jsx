@@ -92,7 +92,7 @@ const HorizontalTextWavy = () => {
           {letters.map((l, i) => {
             const endBefore=isTabletOrMobile?.6:.85
              const total= letters.length
-            const start = 0.04+(i / total) * endBefore;
+            const start = 0.1+(i / total) * endBefore;
             const end=start+ endBefore / total
           //     const start = i / total;
           // const end = start + 1 / total;
