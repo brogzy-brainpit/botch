@@ -43,9 +43,9 @@ const HorizontalTextWavy = () => {
 
  
 
-  const x =useSpring( useTransform(
+  const x =useTransform(
     scrollYProgress,[0, 0.9],[dimension.width, finalX.get()]
-  ),{stiffness:250,damping:50});
+  )
 
   /* ----------------------------
      Flatten letters
@@ -90,7 +90,7 @@ const HorizontalTextWavy = () => {
           className="whitespace-nowrap font-custom text-heading1 lg:text-[10em] leading-[0.95] tracking-[-0.03em]"
         >
           {letters.map((l, i) => {
-            const endBefore=isTabletOrMobile?.6:.85
+            const endBefore=isTabletOrMobile?.8:.85
              const total= letters.length
             const start = 0.1+(i / total) * endBefore;
             const end=start+ endBefore / total
