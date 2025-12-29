@@ -7,7 +7,7 @@ import useWindow from "./useWindow";
 
 export const random = (min=-40, max=200) => Math.random() * (max - min) + min;
 
-const texts = 'hello world my name is bokchexa aminu?'.split(" ");
+const texts = 'hello my name is bokchexa?'.split(" ");
 
 const HorizontalTextWavy = () => {
   const targetRef = useRef(null);
@@ -30,8 +30,7 @@ const HorizontalTextWavy = () => {
 
     const update = () => {
       const textWidth = textRef.current.scrollWidth;
-      // const offset= isTabletOrMobile?-(textWidth - dimension.width) *.8:-(textWidth - dimension.width) /2
-      const offset= -(textWidth - dimension.width) *.8
+      const offset= isTabletOrMobile?-(textWidth - dimension.width) *.7:-(textWidth - dimension.width) /2
       finalX.set(offset);
       // finalX.set(-(textWidth - dimension.width) *1.1);
     };
