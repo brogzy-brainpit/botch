@@ -111,6 +111,7 @@ function PageContent() {
 
         {/* <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/> */}
        <Try/>
+       <StaticBlockXRevealText center className='gap-4'/>
 <HorizontalTextWavy/>
       
        {/* <TextLanding preLoaderOut={true}/> */}
@@ -127,7 +128,6 @@ function PageContent() {
 
           {/* <Mask/> */}
           
-    <StaticBlockXRevealText center className='gap-4'/>
 
       {/* <BlockXRevealText
        className='gap-2'
