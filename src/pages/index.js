@@ -18,7 +18,7 @@ import { Slider } from '@/components/Slider';
 // import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
 // import ClipedVideo from '@/components/ClipedVideo';
-import BlockXRevealText from '@/components/blockXrevealText';
+// import BlockXRevealText from '@/components/blockXrevealText';
 // import GridColumn from '@/layout/GridColumn';
 // import Section from '@/layout/Section';
 // import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
@@ -102,6 +102,8 @@ function PageContent() {
     {/* done and dusted */}
     {/* done and dusted */}
     {/* done and dusted */}
+        <DisplacedParagraph splitBy='letter' radius={80} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
+   
     <SwipeableCards/>
      {/* <HorizontalScrollPanel/> */}
 
@@ -114,7 +116,6 @@ function PageContent() {
 
        {/* <TextLanding preLoaderOut={true}/> */}
 
-        <DisplacedParagraph splitBy='letter' radius={80} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/>
       
         {/* <ScrambleText scrambleSpeed={30}
          letters='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
@@ -125,18 +126,13 @@ function PageContent() {
        */}
         <div className='h-screen flex items-center justify-center'>
 
-      <BlockXRevealText
-       className='gap-2 max-w-[24em] text-heading3'
-      wordsToAnimate={
+      {/* <BlockXRevealText className='gap-2 max-w-[24em] text-heading3' wordsToAnimate={
         [
         {word:'creative',backgroundColor:' #6d28d9',color:'white',borderRadius:'1rem',padding:'0px 10px'},
         {word:'designer',backgroundColor:'#047857 ',color:'white',borderRadius:'1rem',padding:'0px 10px'},   
-        {word:'ideas',backgroundColor:'#a16207 ',color:'white',borderRadius:'1rem',padding:'0px 10px'},
-    ]
-      }
-      gap='.4em'
+        {word:'ideas',backgroundColor:'#a16207 ',color:'white',borderRadius:'1rem',padding:'0px 10px'}]} gap='.4em'
        center text='Need a Creative web designer to collab on your next project? DM me to discuss your ideas!'/>
-      
+       */}
         </div>
 
 
