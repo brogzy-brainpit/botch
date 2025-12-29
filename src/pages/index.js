@@ -27,7 +27,7 @@ import { Slider } from '@/components/Slider';
 // import CardsFlickr from '@/components/CardsFlickr';
 // import ScrambleText from '@/components/ScrambleText';
 import DisplacedParagraph from '@/components/DisplacedParagraph';
-// import useWindow from '@/components/useWindow';
+import useWindow from '@/components/useWindow';
 // import TextLanding from '@/components/TextLanding';
 // import HorizontalTextWavy from '@/components/HorizontalTextWavy';
 import { SwipeableCards } from '@/components/SwipeableCards';
@@ -36,7 +36,7 @@ import { SwipeableCards } from '@/components/SwipeableCards';
 // import MarqueeX from '@/components/MarqueeX';
 
 function PageContent() {
-  // const {dimension}=useWindow()
+  const {dimension}=useWindow()
   //  const [isLoading,setIsLoading]=useState(true)
   //  const [isLoading2,setIsLoading2]=useState(true)
   //  const [preLoaderOut,setPreLoaderOut]=useState(true)
@@ -102,7 +102,7 @@ function PageContent() {
     {/* done and dusted */}
     {/* done and dusted */}
     {/* done and dusted */}
-        <DisplacedParagraph splitBy='letter' radius={80} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
+        <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
    
     <SwipeableCards/>
      {/* <HorizontalScrollPanel/> */}
