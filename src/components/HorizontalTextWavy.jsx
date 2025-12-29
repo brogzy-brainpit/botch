@@ -87,7 +87,7 @@ const HorizontalTextWavy = () => {
         <motion.h2
           ref={textRef}
           style={{ x }}
-          className="whitespace-nowrap font-custom text-heading1 lg:text-[10em] leading-[0.95] tracking-[-0.03em]"
+          className="whitespace-nowrap font-bold font-custom text-heading1 lg:text-[10em] leading-[0.95] tracking-[-0.03em]"
         >
           {letters.map((l, i) => {
             const endBefore=isTabletOrMobile?.8:.85
