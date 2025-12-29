@@ -36,10 +36,10 @@ import HorizontalTextWavy from '@/components/HorizontalTextWavy';
 // import MarqueeX from '@/components/MarqueeX';
 
 function PageContent() {
-  const {dimension}=useWindow()
-   const [isLoading,setIsLoading]=useState(true)
-   const [isLoading2,setIsLoading2]=useState(true)
-   const [preLoaderOut,setPreLoaderOut]=useState(true)
+  // const {dimension}=useWindow()
+  //  const [isLoading,setIsLoading]=useState(true)
+  //  const [isLoading2,setIsLoading2]=useState(true)
+  //  const [preLoaderOut,setPreLoaderOut]=useState(true)
 
   //  document.body.style.cursor="default"
  
