@@ -9,27 +9,27 @@ import { Slider } from '@/components/Slider';
 // import { Crowd } from '@/effects/Crowd';
 // import MouseTrail from '@/effects/MouseTrail';
 // import dynamic from "next/dynamic";
-import Copy from '@/effects/Copy';
+// import Copy from '@/effects/Copy';
 // import { ArrowDown, MousePointer } from 'lucide-react';
 // import Section1 from '@/components/Section1';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
-import FlipCardOnScroll from '@/components/FlipCardOnScroll';
-import Mask from '@/components/Mask';
-import SpreadCards from '@/components/SpreadCards';
+// import FlipCardOnScroll from '@/components/FlipCardOnScroll';
+// import Mask from '@/components/Mask';
+// import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
 // import ClipedVideo from '@/components/ClipedVideo';
 import BlockXRevealText from '@/components/blockXrevealText';
 // import GridColumn from '@/layout/GridColumn';
 // import Section from '@/layout/Section';
 // import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
-import Try from '@/components/Try';
-import IconMorph from '@/components/IconMorph';
+// import Try from '@/components/Try';
+// import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
-import ScrambleText from '@/components/ScrambleText';
+// import ScrambleText from '@/components/ScrambleText';
 import DisplacedParagraph from '@/components/DisplacedParagraph';
 // import useWindow from '@/components/useWindow';
 // import TextLanding from '@/components/TextLanding';
-import HorizontalTextWavy from '@/components/HorizontalTextWavy';
+// import HorizontalTextWavy from '@/components/HorizontalTextWavy';
 import { SwipeableCards } from '@/components/SwipeableCards';
 // import InertiaFlickingCard from '@/components/InertiaFlickingCard';
 // import Marquee from '@/components/Marquee';
@@ -102,26 +102,27 @@ function PageContent() {
     {/* done and dusted */}
     {/* done and dusted */}
     {/* done and dusted */}
-    {/* <SwipeableCards/> */}
+    <SwipeableCards/>
      {/* <HorizontalScrollPanel/> */}
 
        {/* <Try/> */}
      {/* <SpreadCards/> */}
-    <HorizontalTextWavy/>
-         <IconMorph/>
-     <FlipCardOnScroll/>
+    {/* <HorizontalTextWavy/> */}
+         {/* <IconMorph/> */}
+     {/* <FlipCardOnScroll/> */}
        {/* <StaticBlockXRevealText center className='gap-4'/> */}
 
        {/* <TextLanding preLoaderOut={true}/> */}
 
         <DisplacedParagraph splitBy='letter' radius={80} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/>
       
-        <ScrambleText scrambleSpeed={30}
+        {/* <ScrambleText scrambleSpeed={30}
          letters='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
          letter='▚ ▜ ▞ ▃ ▄ ▛ ▟ ▘▅ ▖▙ ▄ ▞ ▚ ▆ ▜ ▘▖ ▔▂' 
         lette='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
        lett="♚ ♛ ♜ ∱ ∬ ∯ ♝ ♞ ♟ ♠ ♡ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩ ☯ ☠ ☢ ☣"
         className={'text-neutral-800 tracking-tighter text-left uppercase text-heading2 md:leading-[78px] lg:leading-[118px] font-custom'}/>          
+       */}
         <div className='h-screen flex items-center justify-center'>
 
       <BlockXRevealText
@@ -140,7 +141,7 @@ function PageContent() {
 
 
 
-          <Mask/>
+          {/* <Mask/> */}
           
 
 
