@@ -3,7 +3,7 @@ import { useScroll, useTransform, useSpring, motion } from 'framer-motion';
 
 export default function BlockXRevealText({
      center=false,gap='10px',
-     offset=['start 0.8', 'start start'],
+     offset=['start end', 'center center'],
      text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, minus rerum! Quasi tempora enim facere aliquam consequuntur cupiditate necessitatibus ipsum magni ullam accusamus, ea iste voluptates corporis illo a impedit.',
      wordsToAnimate=[
         {word:'creative',backgroundColor:' #6d28d9',color:'white',borderRadius:'1rem',padding:'4px'},

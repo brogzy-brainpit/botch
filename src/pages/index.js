@@ -9,28 +9,28 @@ import { Slider } from '@/components/Slider';
 // import { Crowd } from '@/effects/Crowd';
 // import MouseTrail from '@/effects/MouseTrail';
 // import dynamic from "next/dynamic";
-// import Copy from '@/effects/Copy';
+import Copy from '@/effects/Copy';
 // import { ArrowDown, MousePointer } from 'lucide-react';
 // import Section1 from '@/components/Section1';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
-// import FlipCardOnScroll from '@/components/FlipCardOnScroll';
-// import Mask from '@/components/Mask';
+import FlipCardOnScroll from '@/components/FlipCardOnScroll';
+import Mask from '@/components/Mask';
 import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
 // import ClipedVideo from '@/components/ClipedVideo';
-// import BlockXRevealText from '@/components/blockXrevealText';
+import BlockXRevealText from '@/components/blockXrevealText';
 // import GridColumn from '@/layout/GridColumn';
 // import Section from '@/layout/Section';
-import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
+// import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
 import Try from '@/components/Try';
 import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
 import ScrambleText from '@/components/ScrambleText';
-// import DisplacedParagraph from '@/components/DisplacedParagraph';
+import DisplacedParagraph from '@/components/DisplacedParagraph';
 // import useWindow from '@/components/useWindow';
 // import TextLanding from '@/components/TextLanding';
 import HorizontalTextWavy from '@/components/HorizontalTextWavy';
-// import { SwipeableCards } from '@/components/SwipeableCards';
+import { SwipeableCards } from '@/components/SwipeableCards';
 // import InertiaFlickingCard from '@/components/InertiaFlickingCard';
 // import Marquee from '@/components/Marquee';
 // import MarqueeX from '@/components/MarqueeX';
@@ -105,32 +105,27 @@ function PageContent() {
     {/* <SwipeableCards/> */}
      {/* <HorizontalScrollPanel/> */}
 
-       <Try/>
-     <SpreadCards/>
+       {/* <Try/> */}
+     {/* <SpreadCards/> */}
     <HorizontalTextWavy/>
          <IconMorph/>
+     <FlipCardOnScroll/>
        {/* <StaticBlockXRevealText center className='gap-4'/> */}
 
-     {/* <FlipCardOnScroll/> */}
-
-        {/* <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/> */}
-      
        {/* <TextLanding preLoaderOut={true}/> */}
+
+        <DisplacedParagraph splitBy='letter' radius={80} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/>
+      
         <ScrambleText scrambleSpeed={30}
+         letters='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
          letter='▚ ▜ ▞ ▃ ▄ ▛ ▟ ▘▅ ▖▙ ▄ ▞ ▚ ▆ ▜ ▘▖ ▔▂' 
-        letters='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
-       lette="♚ ♛ ♜ ∱ ∬ ∯ ♝ ♞ ♟ ♠ ♡ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩ ☯ ☠ ☢ ☣"
-         lett='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
+        lette='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
+       lett="♚ ♛ ♜ ∱ ∬ ∯ ♝ ♞ ♟ ♠ ♡ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩ ☯ ☠ ☢ ☣"
         className={'text-neutral-800 tracking-tighter text-left uppercase text-heading2 md:leading-[78px] lg:leading-[118px] font-custom'}/>          
-        
+        <div className='h-screen flex items-center justify-center'>
 
-
-
-          {/* <Mask/> */}
-          
-
-      {/* <BlockXRevealText
-       className='gap-2'
+      <BlockXRevealText
+       className='gap-2 max-w-[24em] text-heading3'
       wordsToAnimate={
         [
         {word:'creative',backgroundColor:' #6d28d9',color:'white',borderRadius:'1rem',padding:'0px 10px'},
@@ -140,7 +135,14 @@ function PageContent() {
       }
       gap='.4em'
        center text='Need a Creative web designer to collab on your next project? DM me to discuss your ideas!'/>
-      */}
+      
+        </div>
+
+
+
+          <Mask/>
+          
+
 
      {/* done and dusted */}
     {/* done and dusted */}
