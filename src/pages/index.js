@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import Preloader from '@/components/Preloader';
 import Section2 from '@/components/Section2';
 import { Slider } from '@/components/Slider';
-// import { Crowd } from '@/effects/Crowd';
-import MouseTrail from '@/effects/MouseTrail';
+import { Crowd } from '@/effects/Crowd';
+// import MouseTrail from '@/effects/MouseTrail';
 // import dynamic from "next/dynamic";
-import Copy from '@/effects/Copy';
+// import Copy from '@/effects/Copy';
 // import { ArrowDown, MousePointer } from 'lucide-react';
 // import Section1 from '@/components/Section1';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
@@ -216,11 +216,10 @@ function PageContent() {
       {/* <Slider/> */}
      {/* <Mask/> */}
     
-      {/* <Crowd/> */}
-       <MouseTrail>
+      <Crowd/>
+       {/* <MouseTrail>
         <section className="relative grid h-screen w-full place-content-center bg-white text-black dark:bg-black dark:text-neutral-200 antialiased">
         <h2 className="flex items-center gap-2 text-5xl font-extrabold uppercase tracking-wide transition-colors duration-500">
-          {/* <MousePointer className="w-10 h-10" /> */}
           <Copy trigger={preLoaderOut} text={'hover me '}></Copy>
         </h2>
 
@@ -241,7 +240,7 @@ function PageContent() {
           }
         `}</style> 
       </section>
-      </MouseTrail> 
+      </MouseTrail>  */}
     </Lenis>
            
     
