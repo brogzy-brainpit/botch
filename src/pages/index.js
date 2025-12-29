@@ -13,7 +13,7 @@ import { Slider } from '@/components/Slider';
 // import { ArrowDown, MousePointer } from 'lucide-react';
 // import Section1 from '@/components/Section1';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
-// import FlipCardOnScroll from '@/components/FlipCardOnScroll';
+import FlipCardOnScroll from '@/components/FlipCardOnScroll';
 // import Mask from '@/components/Mask';
 // import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
@@ -102,16 +102,19 @@ function PageContent() {
     {/* done and dusted */}
     {/* done and dusted */}
     {/* done and dusted */}
-        <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
+    <div className='flex justify-center items-center h-screen'>
+
+        <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-center max-w-[27em] text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
+    </div>
    
-    <SwipeableCards/>
+     <FlipCardOnScroll/>
+    {/* <SwipeableCards/> */}
      {/* <HorizontalScrollPanel/> */}
 
        {/* <Try/> */}
      {/* <SpreadCards/> */}
     {/* <HorizontalTextWavy/> */}
          {/* <IconMorph/> */}
-     {/* <FlipCardOnScroll/> */}
        {/* <StaticBlockXRevealText center className='gap-4'/> */}
 
        {/* <TextLanding preLoaderOut={true}/> */}
