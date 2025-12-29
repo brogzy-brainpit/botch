@@ -7,13 +7,13 @@ import Preloader from '@/components/Preloader';
 import Section2 from '@/components/Section2';
 import { Slider } from '@/components/Slider';
 // import { Crowd } from '@/effects/Crowd';
-// import MouseTrail from '@/effects/MouseTrail';
+import MouseTrail from '@/effects/MouseTrail';
 // import dynamic from "next/dynamic";
-// import Copy from '@/effects/Copy';
+import Copy from '@/effects/Copy';
 // import { ArrowDown, MousePointer } from 'lucide-react';
 // import Section1 from '@/components/Section1';
 // import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
-import FlipCardOnScroll from '@/components/FlipCardOnScroll';
+// import FlipCardOnScroll from '@/components/FlipCardOnScroll';
 // import Mask from '@/components/Mask';
 // import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
@@ -26,20 +26,20 @@ import FlipCardOnScroll from '@/components/FlipCardOnScroll';
 // import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
 // import ScrambleText from '@/components/ScrambleText';
-import DisplacedParagraph from '@/components/DisplacedParagraph';
-import useWindow from '@/components/useWindow';
+// import DisplacedParagraph from '@/components/DisplacedParagraph';
+// import useWindow from '@/components/useWindow';
 // import TextLanding from '@/components/TextLanding';
 // import HorizontalTextWavy from '@/components/HorizontalTextWavy';
-import { SwipeableCards } from '@/components/SwipeableCards';
+// import { SwipeableCards } from '@/components/SwipeableCards';
 // import InertiaFlickingCard from '@/components/InertiaFlickingCard';
 // import Marquee from '@/components/Marquee';
 // import MarqueeX from '@/components/MarqueeX';
 
 function PageContent() {
-  const {dimension}=useWindow()
+  // const {dimension}=useWindow()
   //  const [isLoading,setIsLoading]=useState(true)
   //  const [isLoading2,setIsLoading2]=useState(true)
-  //  const [preLoaderOut,setPreLoaderOut]=useState(true)
+   const [preLoaderOut,setPreLoaderOut]=useState(true)
 
   //  document.body.style.cursor="default"
  
@@ -102,12 +102,10 @@ function PageContent() {
     {/* done and dusted */}
     {/* done and dusted */}
     {/* done and dusted */}
-    <div className='flex justify-center items-center h-screen'>
 
-        <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-center max-w-[27em] text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/>
-    </div>
+        {/* <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-center max-w-[27em] text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - the future of real estate - v v '}/> */}
    
-     <FlipCardOnScroll/>
+     {/* <FlipCardOnScroll/> */}
     {/* <SwipeableCards/> */}
      {/* <HorizontalScrollPanel/> */}
 
@@ -219,10 +217,10 @@ function PageContent() {
      {/* <Mask/> */}
     
       {/* <Crowd/> */}
-       {/* <MouseTrail>
+       <MouseTrail>
         <section className="relative grid h-screen w-full place-content-center bg-white text-black dark:bg-black dark:text-neutral-200 antialiased">
         <h2 className="flex items-center gap-2 text-5xl font-extrabold uppercase tracking-wide transition-colors duration-500">
-          <MousePointer className="w-10 h-10" />
+          {/* <MousePointer className="w-10 h-10" /> */}
           <Copy trigger={preLoaderOut} text={'hover me '}></Copy>
         </h2>
 
@@ -243,7 +241,7 @@ function PageContent() {
           }
         `}</style> 
       </section>
-      </MouseTrail>  */}
+      </MouseTrail> 
     </Lenis>
            
     
