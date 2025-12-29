@@ -25,7 +25,7 @@ import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
 import Try from '@/components/Try';
 // import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
-// import ScrambleText from '@/components/ScrambleText';
+import ScrambleText from '@/components/ScrambleText';
 // import DisplacedParagraph from '@/components/DisplacedParagraph';
 // import useWindow from '@/components/useWindow';
 // import TextLanding from '@/components/TextLanding';
