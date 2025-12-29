@@ -17,12 +17,12 @@ import { Slider } from '@/components/Slider';
 // import Mask from '@/components/Mask';
 // import SpreadCards from '@/components/SpreadCards';
 // import VideoOnScroll from '@/effects/VideoOnScroll';
-import ClipedVideo from '@/components/ClipedVideo';
+// import ClipedVideo from '@/components/ClipedVideo';
 // import BlockXRevealText from '@/components/blockXrevealText';
 // import GridColumn from '@/layout/GridColumn';
 // import Section from '@/layout/Section';
-// import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
-// import Try from '@/components/Try';
+import StaticBlockXRevealText from '@/components/StaticBlockXRevealText';
+import Try from '@/components/Try';
 // import IconMorph from '@/components/IconMorph';
 // import CardsFlickr from '@/components/CardsFlickr';
 // import ScrambleText from '@/components/ScrambleText';
@@ -110,25 +110,24 @@ function PageContent() {
      {/* <FlipCardOnScroll/> */}
 
         {/* <DisplacedParagraph splitBy='letter' radius={dimension.width>1000?100:40} className={'font-custom text-black pr-[50px] text-heading3 uppercase'} text={'the future of real estate - '}/> */}
+       <Try/>
 <HorizontalTextWavy/>
-      <div className='flex h-screen justify-center items-center'>
-      </div>
+      
        {/* <TextLanding preLoaderOut={true}/> */}
-        {/* <ScrambleText scrambleSpeed={30}
+        <ScrambleText scrambleSpeed={30}
          letters='▚ ▜ ▞ ▃ ▄ ▛ ▟ ▘▅ ▖▙ ▄ ▞ ▚ ▆ ▜ ▘▖ ▔▂' 
         letter='♫ ♚ ♠ ♬ ♛ ♪ ♜ ♠ ♫ ♝ ♪ ♞ ♫ ♟ ♠ ♞ ♛ ♠ ♡ ♚ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩'
        lette="♚ ♛ ♜ ∱ ∬ ∯ ♝ ♞ ♟ ♠ ♡ ♣ ♤ ♥ ♦ ♫ ♬ ♪ ♩ ☯ ☠ ☢ ☣"
          lett='⩦ ⩧ ⩨ ⩩ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟ ⩠'
         className={'text-neutral-800 tracking-tighter text-left uppercase text-heading2 md:leading-[78px] lg:leading-[118px] font-custom'}/>          
-         */}
+        
 
          {/* <IconMorph/> */}
 
-         {/* <Try/> */}
 
           {/* <Mask/> */}
           
-    {/* <StaticBlockXRevealText center className='gap-4'/> */}
+    <StaticBlockXRevealText center className='gap-4'/>
 
       {/* <BlockXRevealText
        className='gap-2'
@@ -157,12 +156,6 @@ function PageContent() {
     {/* to be finished */}
     {/* to be finished */}
         
-    <div className='max-w-[40em h-screen text-center'>
-
-    </div>
-     <div className='max-w-[40em h-screen text-center'>
-
-    </div>
       {/* <Header preLoaderOut={preLoaderOut}/> */}
         {/* <div className=' max-w-[30em]  p-5 text-heading2 mx-auto' >
 
@@ -197,7 +190,7 @@ function PageContent() {
         </Section> */}
      {/* <Section2 preLoaderOut={preLoaderOut}/> */}
       {/* <Landing setPreLoaderOut={setPreLoaderOut} preLoaderOut={preLoaderOut}/> */}
-     <ClipedVideo/>
+     {/* <ClipedVideo/> */}
       {/* <VideoOnScroll/> */}
 {/* {!preLoaderOut && <div className='h-[1000svh]'/>}
 <div className='h-screen relative text-black flex gap-4 flex-col text-[1.3em] font-body items-center justify-center'>
@@ -220,7 +213,7 @@ function PageContent() {
 
 
 </div> */}
-      <Slider/>
+      {/* <Slider/> */}
      {/* <Mask/> */}
     
       {/* <Crowd/> */}
